@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="json test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ezmorph_1_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs_for_json.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ezmorph_1_0_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-beanutils-1.9.1-bin.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-collections4-4.0-bin.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-lang-2.6-bin.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-logging-1.1.3-bin.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ezmorph-1.0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json-lib-2.4-jdk15.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MiuiMusic.iml" afterPath="$PROJECT_DIR$/MiuiMusic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" afterPath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -72,7 +79,7 @@
       <file leaf-file-name="MusicVip.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
+            <state line="16" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
               <folding />
             </state>
           </provider>
@@ -81,7 +88,7 @@
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="14" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -108,8 +115,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="x" value="64" />
+    <option name="y" value="-5" />
     <option name="width" value="1377" />
     <option name="height" value="906" />
   </component>
@@ -148,6 +155,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="MiuiMusic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -194,7 +205,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json-lib-2.4-jdk15.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/json-lib-2.4-jdk15.jar!/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -466,7 +477,7 @@
       <workItem from="1393310595330" duration="5159000" />
       <workItem from="1393416206951" duration="1270000" />
       <workItem from="1393494398012" duration="657000" />
-      <workItem from="1393495068494" duration="163000" />
+      <workItem from="1393495068494" duration="3258000" />
     </task>
     <task id="LOCAL-00001" summary="add json lib">
       <created>1393494718162</created>
@@ -476,14 +487,18 @@
       <created>1393495115097</created>
       <updated>1393495115097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="json test">
+      <created>1393495236775</created>
+      <updated>1393495236775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7249000" />
+    <option name="totallyTimeSpent" value="10344000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1377" height="906" extended-state="6" />
+    <frame x="64" y="-5" width="1377" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -505,7 +520,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -576,14 +591,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+        <state line="14" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
+        <state line="16" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
           <folding />
         </state>
       </provider>
@@ -665,7 +680,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>ezmorph-1.0.6</last-edited>
+          <last-edited>libs for json</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

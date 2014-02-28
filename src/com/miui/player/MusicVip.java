@@ -7,10 +7,12 @@ package com.miui.player;
  * Created on 2014-02-25
  */
 
+import net.sf.json.JSONObject;
+
 public class MusicVip {
 
     private static int TYPE;
 
-
+    JSONObject n = JSONObject.fromObject();
 
 }
