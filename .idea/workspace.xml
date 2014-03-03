@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="json test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs_for_json.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ezmorph_1_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-beanutils-1.9.1-bin.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-collections4-4.0-bin.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-lang-2.6-bin.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons-logging-1.1.3-bin.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ezmorph-1.0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json-lib-2.4-jdk15.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tars/commons-beanutils-1.9.1-bin.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.9.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tars/commons-collections-3.2.1-bin.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-collections-3.2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tars/commons-lang-2.6-bin.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-lang-2.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tars/commons-logging-1.1.3-bin.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-logging-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ezmorph-1.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/json-lib-2.4-jdk15.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/libs_for_json.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_9_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MiuiMusic.iml" afterPath="$PROJECT_DIR$/MiuiMusic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" afterPath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -79,8 +82,10 @@
       <file leaf-file-name="MusicVip.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
-              <folding />
+            <state line="12" column="27" selection-start="236" selection-end="236" vertical-scroll-proportion="0.3726708" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <element signature="e#372#380#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,10 +161,6 @@
               <option name="myItemId" value="MiuiMusic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -201,7 +202,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -227,13 +228,37 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1013" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.miui.player" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MusicVip">
+    <configuration default="false" name="MusicVip" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.miui.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.miui.player.MusicVip" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MiuiMusic" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -445,7 +470,14 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.MusicVip" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.MusicVip" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -477,7 +509,7 @@
       <workItem from="1393310595330" duration="5159000" />
       <workItem from="1393416206951" duration="1270000" />
       <workItem from="1393494398012" duration="657000" />
-      <workItem from="1393495068494" duration="3258000" />
+      <workItem from="1393495068494" duration="8484000" />
     </task>
     <task id="LOCAL-00001" summary="add json lib">
       <created>1393494718162</created>
@@ -491,15 +523,19 @@
       <created>1393495236775</created>
       <updated>1393495236775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="json test">
+      <created>1393567752705</created>
+      <updated>1393567752705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10344000" />
+    <option name="totallyTimeSpent" value="15570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-5" width="1377" height="906" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,15 +549,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32938075" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,7 +595,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
+          <folding>
+            <element signature="e#372#380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -573,14 +611,18 @@
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="1" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="330">
-          <folding />
+          <folding>
+            <element signature="e#372#380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="330">
-          <folding />
+          <folding>
+            <element signature="e#372#380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -598,8 +640,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.4979253" vertical-offset="0" max-vertical-offset="482">
-          <folding />
+        <state line="12" column="27" selection-start="236" selection-end="236" vertical-scroll-proportion="0.3726708" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="e#372#380#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -680,7 +724,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs for json</last-edited>
+          <last-edited>commons-beanutils-1.9.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
