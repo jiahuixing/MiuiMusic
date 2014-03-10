@@ -4,12 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="json test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/miui/player/LightTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/miui/player/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/miui/player/url_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MiuiMusic.iml" afterPath="$PROJECT_DIR$/MiuiMusic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" afterPath="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" />
+    <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="category">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/url_test.java" afterPath="$PROJECT_DIR$/src/com/miui/player/url_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MiuiMusic.iws" />
@@ -77,7 +73,7 @@
       <file leaf-file-name="url_test.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miui/player/url_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="35" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.5394737" vertical-offset="1194" max-vertical-offset="2430">
+            <state line="127" column="20" selection-start="4209" selection-end="4209" vertical-scroll-proportion="0.64389235" vertical-offset="1594" max-vertical-offset="2445">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -606,7 +602,7 @@
       <workItem from="1393494398012" duration="657000" />
       <workItem from="1393495068494" duration="15216000" />
       <workItem from="1394161193875" duration="5647000" />
-      <workItem from="1394434418907" duration="19298000" />
+      <workItem from="1394434418907" duration="19996000" />
     </task>
     <task id="LOCAL-00001" summary="add json lib">
       <created>1393494718162</created>
@@ -628,11 +624,15 @@
       <created>1393815871620</created>
       <updated>1393815871620</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="json test">
+      <created>1394484860876</created>
+      <updated>1394484860876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47247000" />
+    <option name="totallyTimeSpent" value="47945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-5" width="1377" height="906" extended-state="6" />
@@ -651,14 +651,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24906227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -681,7 +681,8 @@
     <MESSAGE value="add json lib" />
     <MESSAGE value="readme" />
     <MESSAGE value="json test" />
-    <option name="LAST_COMMIT_MESSAGE" value="json test" />
+    <MESSAGE value="category" />
+    <option name="LAST_COMMIT_MESSAGE" value="category" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -930,7 +931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/url_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="35" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.5394737" vertical-offset="1194" max-vertical-offset="2430">
+        <state line="127" column="20" selection-start="4209" selection-end="4209" vertical-scroll-proportion="0.64389235" vertical-offset="1594" max-vertical-offset="2445">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

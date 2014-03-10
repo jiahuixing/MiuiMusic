@@ -22,7 +22,6 @@ import java.util.Map;
 public class url_test {
 
     private static String url_site = "http://fm.duokanbox.com/";
-    private int interface_count = 6;
 
     private static Map<Integer, String> parts;
 
@@ -98,7 +97,13 @@ public class url_test {
                         List list;
                         list = json.getJSONArray("list");
                         System.out.println(list);
-                        System.out.println(list.get(0));
+                        int list_len = list.size();
+                        debug(list_len);
+                        JSONObject json_tmp;
+                        for (Object aList : list) {
+                            json_tmp = JSONObject.fromObject(aList);
+                            debug(json_tmp);
+                        }
                         conn.disconnect();
                     }
                 } catch (MalformedURLException e) {
@@ -108,8 +113,6 @@ public class url_test {
                 }
                 break;
             case 1:
-                int cid;
-                cid = 1;
                 /*
                 * category/cid
                 * */
