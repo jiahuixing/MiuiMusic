@@ -9,9 +9,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Project name : MiuiMusic
@@ -25,16 +23,16 @@ public class url_test {
 
     private static Map<Integer, String> parts;
 
-    private String CATEGORY = "category";   //category
-    private String CHANNEL = "category/";   //category+cid = category/cid
-    private String CHANNEL_SONGS = "channel/";  //channel+nid = channel/nid
-    private String SID_INFO = "music/";  //music+sid = music/sid
-    private String CP_ID_INFO = "sid/";  //sid+cp_id = sid/sid
-    private String QUERY = "query/";  //query+info = query/info
+    private final String CATEGORY = "category";   //category
+    private final String CHANNEL = "category/";   //category+cid = category/cid
+    private final String CHANNEL_SONGS = "channel/";  //channel+nid = channel/nid
+    private final String SID_INFO = "music/";  //music+sid = music/sid
+    private final String CP_ID_INFO = "sid/";  //sid+cp_id = sid/sid
+    private final String QUERY = "query/";  //query+info = query/info
 
-    private List<Integer> categories;
-    private List<Integer> channels;
-    private String info;
+    private List<String> categories;
+    private static List<String> channels;
+    private static String info;
 
     URL url = null;
     HttpURLConnection conn = null;
@@ -100,10 +98,17 @@ public class url_test {
                         int list_len = list.size();
                         debug(list_len);
                         JSONObject json_tmp;
+                        categories = new ArrayList<String>();
                         for (Object aList : list) {
                             json_tmp = JSONObject.fromObject(aList);
                             debug(json_tmp);
+                            String cid;
+                            cid = json_tmp.getString("cid");
+                            debug(cid);
+                            categories.add(cid);
                         }
+                        Collections.sort(categories);
+                        System.out.println(categories);
                         conn.disconnect();
                     }
                 } catch (MalformedURLException e) {
