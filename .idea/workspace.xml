@@ -4,7 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="category">
+    <list default="true" id="534ba6ca-4d1e-4236-9d8c-b9ae16affb0d" name="Default" comment="get_url_info">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/test.java" afterPath="$PROJECT_DIR$/src/com/miui/player/test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miui/player/url_test.java" afterPath="$PROJECT_DIR$/src/com/miui/player/url_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,10 +74,19 @@
       <file leaf-file-name="url_test.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miui/player/url_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="44" selection-start="3449" selection-end="3449" vertical-scroll-proportion="0.46583852" vertical-offset="1275" max-vertical-offset="2535">
+            <state line="176" column="20" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.39544514" vertical-offset="2449" max-vertical-offset="3675">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/miui/player/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="14" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,11 +120,11 @@
         <option value="$PROJECT_DIR$/src/com/miui/player/MusicVipImpl.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/miui/player/MusicVip.java" />
-        <option value="$PROJECT_DIR$/src/com/miui/player/test.java" />
         <option value="$PROJECT_DIR$/src/com/miui/player/ttttt.java" />
         <option value="$PROJECT_DIR$/src/com/miui/player/LightTest.java" />
         <option value="$PROJECT_DIR$/src/com/miui/player/Json_Test.java" />
         <option value="$PROJECT_DIR$/src/com/miui/player/SendHttpRequestter.java" />
+        <option value="$PROJECT_DIR$/src/com/miui/player/test.java" />
         <option value="$PROJECT_DIR$/src/com/miui/player/url_test.java" />
       </list>
     </option>
@@ -124,6 +134,25 @@
     <option name="y" value="-5" />
     <option name="width" value="1377" />
     <option name="height" value="906" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>EmptyStatementBody</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -235,7 +264,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
-    <property name="SearchEverywhereHistory" value="pect" />
+    <property name="SearchEverywhereHistory" value="inspect&#10;pect" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -564,8 +593,8 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.url_test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LightTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LightTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.MusicVip" />
       </list>
     </recent_temporary>
@@ -602,7 +631,7 @@
       <workItem from="1393494398012" duration="657000" />
       <workItem from="1393495068494" duration="15216000" />
       <workItem from="1394161193875" duration="5647000" />
-      <workItem from="1394434418907" duration="21263000" />
+      <workItem from="1394434418907" duration="34565000" />
     </task>
     <task id="LOCAL-00001" summary="add json lib">
       <created>1393494718162</created>
@@ -632,11 +661,15 @@
       <created>1394485546930</created>
       <updated>1394485546930</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="category">
+      <created>1394490959052</created>
+      <updated>1394490959052</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49212000" />
+    <option name="totallyTimeSpent" value="62514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-5" width="1377" height="906" extended-state="6" />
@@ -647,6 +680,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,19 +689,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24906227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41501975" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4150685" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -686,7 +719,9 @@
     <MESSAGE value="readme" />
     <MESSAGE value="json test" />
     <MESSAGE value="category" />
-    <option name="LAST_COMMIT_MESSAGE" value="category" />
+    <MESSAGE value="category/cid" />
+    <MESSAGE value="get_url_info" />
+    <option name="LAST_COMMIT_MESSAGE" value="get_url_info" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -819,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/miui/player/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/MusicVip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="48" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="630">
@@ -926,16 +954,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/jdk/src.zip!/java/net/URLStreamHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="36" selection-start="2041" selection-end="2054" vertical-scroll-proportion="0.33333334" vertical-offset="484" max-vertical-offset="8520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="944" column="29" selection-start="34831" selection-end="34845" vertical-scroll-proportion="0.0" vertical-offset="13564" max-vertical-offset="19185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3529412" vertical-offset="12" max-vertical-offset="3375">
+        <state line="11" column="41" selection-start="444" selection-end="444" vertical-scroll-proportion="0.33707866" vertical-offset="0" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/miui/player/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miui/player/url_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="44" selection-start="3449" selection-end="3449" vertical-scroll-proportion="0.46583852" vertical-offset="1275" max-vertical-offset="2535">
+        <state line="176" column="20" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.39544514" vertical-offset="2449" max-vertical-offset="3675">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

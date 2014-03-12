@@ -8,22 +8,10 @@ package com.miui.player;
  */
 public class test {
 
-    public static void aaaaa() {
-        System.out.println("aaaaa");
-    }
-
-    private static void bbbb() {
-        System.out.println("bbbbb");
-    }
-
-    private static void cccccc() {
-        System.out.println("ccccc");
-    }
-
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-
-        test t = new test();
-        System.out.println("mmmmm");
 
     }
 
