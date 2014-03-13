@@ -34,6 +34,8 @@ public class url_test {
 
     private List<String> categories;
     private static List<String> channels;
+    private static List<String> sids;
+    private static List<String> cp_song_ids;
     private static String info;
 
     private URL url = null;
@@ -68,6 +70,7 @@ public class url_test {
             param = Q_MASK + PARAM_PAGE + 1 + AND_MASK + PARAM_SIZE + 10;
             debug(String.format("param=%s", param));
         }
+        int rnd;
         switch (key) {
             case 0:
                 /*
@@ -77,72 +80,47 @@ public class url_test {
                     interface_url = interface_url + param;
                 }
                 debug(String.format("interface_url=%s", interface_url));
-                StringBuilder sb = new StringBuilder();
-                try {
-                    url = new URL(interface_url);
-                    conn = (HttpURLConnection) url.openConnection();
-                    int r_code = conn.getResponseCode();
-                    /*debug(r_code);*/
-                    if (r_code == HttpURLConnection.HTTP_OK) {
-                        conn.connect();
-                        InputStream is = conn.getInputStream();
-                        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
-                        String line;
-                        while ((line = br.readLine()) != null) {
-                    /*debug(line);*/
-                            sb.append(line);
-                        }
-                        /*debug(sb.toString());*/
-                        JSONObject json = JSONObject.fromObject(sb.toString());
-                        debug(String.format("m_url=%s", json));
-                        String tmp;
-                        tmp = json.getString("total");
-                        debug(String.format("tmp=%s", tmp));
-                        List list;
-                        list = json.getJSONArray("list");
-                        System.out.println(list);
-                        int list_len = list.size();
-                        debug(String.format("list_len=%s", list_len));
-                        JSONObject json_tmp;
-                        categories = new ArrayList<String>();
-                        for (Object aList : list) {
-                            json_tmp = JSONObject.fromObject(aList);
-                            debug(String.format("json_tmp=%s", json_tmp));
-                            String cid;
-                            cid = json_tmp.getString("cid");
-                            debug(String.format("cid=%s", cid));
-                            categories.add(cid);
-                        }
-                        Collections.sort(categories);
-                        System.out.println(categories);
-                        conn.disconnect();
-                    }
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                get_url_info(key, interface_url);
                 break;
             case 1:
                 /*
                 * category/cid
                 * */
+                debug(String.format("categories=%s", categories));
                 if (categories != null) {
+                    Collections.sort(categories);
                     Random random = new Random(System.currentTimeMillis());
-                    int rnd = Math.abs(random.nextInt()) % (categories.size());
+                    rnd = Math.abs(random.nextInt()) % (categories.size());
                     debug(String.format("rnd=%s", rnd));
                     interface_url = interface_url + categories.get(rnd);
+                    if (null != param) {
+                        interface_url = interface_url + param;
+                    }
+                    debug(String.format("interface_url=%s", interface_url));
+                    get_url_info(key, interface_url);
+                } else {
+                    debug("categories == null.");
                 }
-                if (null != param) {
-                    interface_url = interface_url + param;
-                }
-                debug(String.format("interface_url=%s", interface_url));
-                get_url_info(key, interface_url);
                 break;
             case 2:
                 /*
                 * channel/nid
                 * */
+                debug(String.format("channels=%s", channels));
+                if (channels != null) {
+                    Collections.sort(channels);
+                    Random random = new Random(System.currentTimeMillis());
+                    rnd = Math.abs(random.nextInt()) % (channels.size());
+                    debug(String.format("rnd=%s", rnd));
+                    interface_url = interface_url + channels.get(rnd);
+                    if (null != param) {
+                        interface_url = interface_url + param;
+                    }
+                    debug(String.format("interface_url=%s", interface_url));
+                    get_url_info(key, interface_url);
+                } else {
+                    debug("channels == null.");
+                }
                 break;
             case 3:
                 /*
@@ -182,14 +160,16 @@ public class url_test {
                 String status;
                 String msg;
                 String total;
+                String c_url;
+                String c_name;
                 JSONArray json_array;
-                status = json.getString("status");
+                status = json.getString(json_tags.TAG_STATUS);
                 debug(String.format("status=%s", status));
-                msg = json.getString("msg");
+                msg = json.getString(json_tags.TAG_MSG);
                 debug(String.format("msg=%s", msg));
-                total = json.getString("total");
+                total = json.getString(json_tags.TAG_TOTAL);
                 debug(String.format("total=%s", total));
-                json_array = json.getJSONArray("list");
+                json_array = json.getJSONArray(json_tags.TAG_LIST);
                 System.out.println(json_array);
                 JSONObject tmp;
                 String m_url;
@@ -197,20 +177,95 @@ public class url_test {
                 String m_name;
                 String m_nid;
                 String m_description;
-                for (Object m_json_array : json_array) {
-                    tmp = JSONObject.fromObject(m_json_array);
-                    m_url = tmp.getString("url");
-                    m_count = tmp.getString("count");
-                    m_name = tmp.getString("name");
-                    m_nid = tmp.getString("nid");
-                    m_description = tmp.getString("description");
-                    debug("###########################################################");
-                    debug(String.format("m_url=%s", m_url));
-                    debug(String.format("m_count=%s", m_count));
-                    debug(String.format("m_name=%s", m_name));
-                    debug(String.format("m_nid=%s", m_nid));
-                    debug(String.format("m_description=%s", m_description));
-                    debug("###########################################################");
+                String m_cid;
+                String m_album_name;
+                String m_language;
+                String m_file_duration;
+                String m_country;
+                String m_compose_name;
+                String m_artist_name;
+                String m_cp_song_id;
+                String m_lyricist_name;
+                String m_sid;
+                String m_copy_type;
+                String m_cp_id;
+                switch (key) {
+                    case 0:
+                        categories = new ArrayList<String>();
+                        for (Object m_json_array : json_array) {
+                            tmp = JSONObject.fromObject(m_json_array);
+                            m_description = tmp.getString(json_tags.TAG_DESCRIPTION);
+                            m_name = tmp.getString(json_tags.TAG_NAME);
+                            m_cid = tmp.getString(json_tags.TAG_CID);
+                            debug("###########################################################");
+                            debug(String.format("idx=%s", json_array.indexOf(m_json_array)));
+                            debug(String.format("m_description=%s", m_description));
+                            debug(String.format("m_name=%s", m_name));
+                            debug(String.format("m_cid=%s", m_cid));
+                            debug("###########################################################");
+                            categories.add(m_cid);
+                        }
+                        break;
+                    case 1:
+                        channels = new ArrayList<String>();
+                        for (Object m_json_array : json_array) {
+                            tmp = JSONObject.fromObject(m_json_array);
+                            m_url = tmp.getString(json_tags.TAG_URL);
+                            m_count = tmp.getString(json_tags.TAG_COUNT);
+                            m_name = tmp.getString(json_tags.TAG_NAME);
+                            m_nid = tmp.getString(json_tags.TAG_NID);
+                            m_description = tmp.getString(json_tags.TAG_DESCRIPTION);
+                            debug("###########################################################");
+                            debug(String.format("idx=%s", json_array.indexOf(m_json_array)));
+                            debug(String.format("m_url=%s", m_url));
+                            debug(String.format("m_count=%s", m_count));
+                            debug(String.format("m_name=%s", m_name));
+                            debug(String.format("m_nid=%s", m_nid));
+                            debug(String.format("m_description=%s", m_description));
+                            debug("###########################################################");
+                            channels.add(m_nid);
+                        }
+                        break;
+                    case 2:
+                        c_url = json.getString(json_tags.TAG_URL);
+                        debug(String.format("c_url=%s", c_url));
+                        c_name = json.getString(json_tags.TAG_NAME);
+                        debug(String.format("c_name=%s", c_name));
+                        sids = new ArrayList<String>();
+                        cp_song_ids = new ArrayList<String>();
+                        for (Object m_json_array : json_array) {
+                            tmp = JSONObject.fromObject(m_json_array);
+                            m_album_name = tmp.getString(json_tags.TAG_ALBUM_NAME);
+                            m_name = tmp.getString(json_tags.TAG_NAME);
+                            m_language = tmp.getString(json_tags.TAG_LANGUAGE);
+                            m_file_duration = tmp.getString(json_tags.TAG_FILE_DURATION);
+                            m_country = tmp.getString(json_tags.TAG_COUNTRY);
+                            m_compose_name = tmp.getString(json_tags.TAG_COMPOSE_NAME);
+                            m_artist_name = tmp.getString(json_tags.TAG_ARTIST_NAME);
+                            m_cp_song_id = tmp.getString(json_tags.TAG_CP_SONG_ID);
+                            m_lyricist_name = tmp.getString(json_tags.TAG_LYRICIST_NAME);
+                            m_sid = tmp.getString(json_tags.TAG_SID);
+                            m_copy_type = tmp.getString(json_tags.TAG_COPY_TYPE);
+                            m_cp_id = tmp.getString(json_tags.TAG_CP_ID);
+                            debug("###########################################################");
+                            debug(String.format("idx=%s", json_array.indexOf(m_json_array)));
+                            debug(String.format("m_album_name=%s", m_album_name));
+                            debug(String.format("m_name=%s", m_name));
+                            debug(String.format("m_language=%s", m_language));
+                            debug(String.format("m_file_duration=%s", m_file_duration));
+                            debug(String.format("m_country=%s", m_country));
+                            debug(String.format("m_compose_name=%s", m_compose_name));
+                            debug(String.format("m_artist_name=%s", m_artist_name));
+                            debug(String.format("m_cp_song_id=%s", m_cp_song_id));
+                            debug(String.format("m_lyricist_name=%s", m_lyricist_name));
+                            debug(String.format("m_sid=%s", m_sid));
+                            debug(String.format("m_copy_type=%s", m_copy_type));
+                            debug(String.format("m_cp_id=%s", m_cp_id));
+                            debug("###########################################################");
+                            sids.add(m_sid);
+                            cp_song_ids.add(m_cp_song_id);
+                        }
+                        break;
                 }
                 conn.disconnect();
             } else {
