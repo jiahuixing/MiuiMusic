@@ -31,15 +31,13 @@ public class url_test {
     private static final String PARAM_SIZE = "size=";
 
     private static Map<Integer, String> parts;
+    private static Map<Integer, Integer> params;
 
     private List<String> categories;
     private static List<String> channels;
     private static List<String> sids;
     private static List<String> cp_song_ids;
     private static String info;
-
-    private URL url = null;
-    private HttpURLConnection conn = null;
 
     private void init_map() {
         parts = new HashMap<Integer, String>();
@@ -55,17 +53,27 @@ public class url_test {
         parts.put(4, CP_ID_INFO);
         String QUERY = "query/";
         parts.put(5, QUERY);
+
+        params = new HashMap<Integer, Integer>();
+        params.put(0, NEED_PARAM);
+        params.put(1, NEED_PARAM);
+        params.put(2, NEED_PARAM);
+        params.put(3, NO_NEED_PARAM);
+        params.put(4, NO_NEED_PARAM);
+        params.put(5, NEED_PARAM);
     }
 
     private static void debug(String msg) {
         System.out.printf("######%s######%n", msg);
     }
 
-    private void test_interface(int key, int need_param) {
+    private void test_interface(int key) {
         debug(String.format("key=%s", key));
         String interface_url;
         interface_url = url_site + parts.get(key);
         String param = null;
+        int need_param;
+        need_param = params.get(key);
         if (need_param == NEED_PARAM) {
             param = Q_MASK + PARAM_PAGE + 1 + AND_MASK + PARAM_SIZE + 10;
             debug(String.format("param=%s", param));
@@ -126,11 +134,41 @@ public class url_test {
                 /*
                 * music/sid
                 * */
+                debug(String.format("sids=%s", sids));
+                if (sids != null) {
+                    Collections.sort(sids);
+                    Random random = new Random(System.currentTimeMillis());
+                    rnd = Math.abs(random.nextInt()) % (sids.size());
+                    debug(String.format("rnd=%s", rnd));
+                    interface_url = interface_url + sids.get(rnd);
+                    if (null != param) {
+                        interface_url = interface_url + param;
+                    }
+                    debug(String.format("interface_url=%s", interface_url));
+                    /*get_url_info(key,interface_url);*/
+                } else {
+                    debug("sids == null.");
+                }
                 break;
             case 4:
                 /*
                 * sid/sid
                 * */
+                debug(String.format("cp_song_ids=%s", cp_song_ids));
+                if (sids != null) {
+                    Collections.sort(cp_song_ids);
+                    Random random = new Random(System.currentTimeMillis());
+                    rnd = Math.abs(random.nextInt()) % (cp_song_ids.size());
+                    debug(String.format("rnd=%s", rnd));
+                    interface_url = interface_url + cp_song_ids.get(rnd);
+                    if (null != param) {
+                        interface_url = interface_url + param;
+                    }
+                    debug(String.format("interface_url=%s", interface_url));
+                    /*get_url_info(key,interface_url);*/
+                } else {
+                    debug("sids == null.");
+                }
                 break;
             case 5:
                 /*
@@ -143,8 +181,8 @@ public class url_test {
 
     private void get_url_info(int key, String input_url) {
         try {
-            url = new URL(input_url);
-            conn = (HttpURLConnection) url.openConnection();
+            URL url = new URL(input_url);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             int r_code = conn.getResponseCode();
             if (r_code == HttpURLConnection.HTTP_OK) {
                 conn.connect();
@@ -287,8 +325,10 @@ public class url_test {
 /*        for (int j = 0;j<parts.size();j++){
             t.test_interface(j);
         }*/
-        t.test_interface(0, NO_NEED_PARAM);
-        t.test_interface(1, NEED_PARAM);
+        t.test_interface(0);
+        t.test_interface(1);
+        t.test_interface(2);
+        t.test_interface(3);
     }
 
 }
